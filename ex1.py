@@ -5,8 +5,6 @@
 
 from operator import add, sub, mul, truediv
 
-# on créer un dictionnaire avec les opérateurs et on les associe (les chaines de car) a ceux du package operator
-
 ops = {
     '+': add,
     '-': sub,
@@ -33,9 +31,6 @@ def calc():
             print("Mauvais type, entrer l'un des opérateurs suivants : +, -, *, /")
     return ops[operateur](n1, n2)
 
-# help(calc)
-
-# les tests
 
 if __name__ == "__main__":
     for i in range(5):
